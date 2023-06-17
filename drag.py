@@ -9,14 +9,14 @@ engine.setProperty('voice',voices[1].id)
 engine.say('Hey, I am drag')
 engine.say('How can I help you')
 def talk(text):
-engine.say(text)
-engine.runAndWait()
+  engine.say(text)
+  engine.runAndWait()
 def take_command():
-try:
-with sr.Microphone() as source:
-talk('tell me I am listening')
-voice=listener.listen(source)
-command=command.lower()
+  try:
+    with sr.Microphone() as source:
+      talk('tell me I am listening')
+      voice=listener.listen(source)
+      command=command.lower()
 if 'drag' in command:
 command=command.replace('drag','')
 talk(command)
