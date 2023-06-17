@@ -42,12 +42,12 @@ elif 'Do you have feelings' in command:
 elif 'crazy' in command:
   talk ('not as much as you')
 elif 'you are beautiful' in command:
-talk('Thank you, But you can not discribe me physicaly but you can discribe my tune')
+  talk('Thank you, But you can not discribe me physicaly but you can discribe my tune')
 elif 'dance' in command:
-talk('sorry I can not dance but I can make you dance and get relax by playing wounderful songs')
+  talk('sorry I can not dance but I can make you dance and get relax by playing wounderful songs')
 elif 'play' in command:
-song=command.replace('play','')
-talk('playing'+song)
+  song=command.replace('play','')
+  talk('playing'+song)
 pywhatkit.playonyt(song)
 elif 'time' in command:
 time=datetime.datetime.now().strftime('%I:%M %p')
