@@ -18,29 +18,29 @@ def take_command():
       voice=listener.listen(source)
       command=command.lower()
 if 'drag' in command:
-command=command.replace('drag','')
-talk(command)
+  command=command.replace('drag','')
+  talk(command)
 except:
-pass
-return command
+  pass
+  return command
 def run_drag():
-command=talk_command()
+  command=talk_command()
 if 'hai' in command:
-talk('hello, how are you')
+  talk('hello, how are you')
 elif 'how are you' in command:
-talk('I am fine, how can I help you')
+  talk('I am fine, how can I help you')
 elif 'who are you' in command:
-talk('I am drag, your sweetest voice assistant')
+  talk('I am drag, your sweetest voice assistant')
 elif 'I like you' in command:
-talk('Do not try to flirt with me , under section 509 of the IPC , flirting is an offence')
-elif(Are you single' in command:
-talk('No , I am committed with wifi')
+  talk('Do not try to flirt with me , under section 509 of the IPC , flirting is an offence')
+elif 'Are you single' in command:
+  talk('No , I am committed with wifi')
 elif 'I love you' in command:
-talk('please do not waste your time, I am already committed')
+  talk('please do not waste your time, I am already committed')
 elif 'Do you have feelings' in command:
-talk('offcourse, but not as much as you')
+  talk('offcourse, but not as much as you')
 elif 'crazy' in command:
-talk ('not as much as you')
+  talk ('not as much as you')
 elif 'you are beautiful' in command:
 talk('Thank you, But you can not discribe me physicaly but you can discribe my tune')
 elif 'dance' in command:
