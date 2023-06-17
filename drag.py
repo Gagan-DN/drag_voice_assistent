@@ -48,19 +48,19 @@ elif 'dance' in command:
 elif 'play' in command:
   song=command.replace('play','')
   talk('playing'+song)
-pywhatkit.playonyt(song)
+  pywhatkit.playonyt(song)
 elif 'time' in command:
-time=datetime.datetime.now().strftime('%I:%M %p')
-talk('current time is'+time)
+  time=datetime.datetime.now().strftime('%I:%M %p')
+  talk('current time is'+time)
 elif 'about' in command:
-information=command.replace('wikipedia','')
-info=wikipedia.summary(information,3)
-talk(info)
+  information=command.replace('wikipedia','')
+  info=wikipedia.summary(information,3)
+  talk(info)
 elif 'joke' in command:
-talk(pyjokes.get_joke())
+  talk(pyjokes.get_joke())
 elif 'child helpline' in command:
-talk('child helpline is 1098')
+  talk('child helpline is 1098')
 else:
-talk('sorry, could you please repeat')
+  talk('sorry, could you please repeat')
 while True:
 run_drag()
